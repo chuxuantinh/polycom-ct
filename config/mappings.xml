@@ -1,0 +1,28 @@
+<root>
+
+    <!-- The mappings for the data flow from Polycom phone to the hardware -->
+    <phone2devices>
+
+        <mapping>
+            <!-- The sender is Polycom phone here in the notification context-->
+            <phone>127.0.0.1</phone>
+
+            <!-- All the receivers will receive manipulated data sent from the sender -->
+            <devices>
+                <device>192.168.1.101:23</device>
+                <device>localhost:23</device>
+            </devices>
+        </mapping>
+
+        <mapping>
+            <!-- The sender is Polycom phone here in the notification context-->
+            <phone>192.168.1.101</phone>
+
+            <!-- All the receivers will receive manipulated data sent from the sender -->
+            <devices>
+                <device>192.168.1.101:23</device>
+                <device>127.0.0.1:23</device>
+            </devices>
+        </mapping>
+    </phone2devices>
+</root>
